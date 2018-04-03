@@ -1,5 +1,5 @@
 # React Easy State Todo
-I just wanted to try out [react-easy-state](https://github.com/solkimicreb/react-easy-state) to see how it compares to Redux. I also tried out MobX here.
+I just wanted to try out [react-easy-state](https://github.com/solkimicreb/react-easy-state) to see how it compares to Redux. I also tried out [MobX here](https://github.com/mildrenben/mobx-todo).
 
 If you want to run it simply `yarn install` and `yarn start`, it'll be on `localhost:8080`.
 
