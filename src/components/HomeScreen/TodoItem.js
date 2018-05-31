@@ -5,16 +5,16 @@ import state from '../../store'
 import Button from '../Button'
 import v from '../../styles/vars/colors'
 
-const Styles = styled.div`
+const Root = styled.div`
   border-bottom: solid 1px ${v.blue}
 `
 
 const TodoItem = ({ item: { message, date, id } }) => (
-	<Styles>
-		<p>{message}</p>
-		<p>When: {date.toString()}</p>
-		<Button onClick={() => state.removeItem(id)}>Complete</Button>
-	</Styles>
+	<Root data-cy='TodoItem'>
+		<p data-cy='TodoItem_Message'>{message}</p>
+		<p data-cy='TodoItem_Timestamp'>When: {date.toString()}</p>
+		<Button onClick={() => state.removeItem(id)} data-cy='TodoItem_Complete'>Complete</Button>
+	</Root>
 )
   
 TodoItem.propTypes = {

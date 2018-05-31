@@ -12,10 +12,12 @@
     "coverage": "jest --coverage --watch",
     "lint": "eslint ./src --fix --ext js",
     "precommit": "yarn lint && yarn test:nowatch",
-    "prepush": "yarn lint && yarn test:nowatch"
+    "prepush": "yarn lint && yarn test:nowatch",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
+    "cypress": "^2.1.0",
     "prop-types": "15.6.0",
     "react": "16.2",
     "react-dom": "16.2",
