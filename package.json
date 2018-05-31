@@ -11,8 +11,6 @@
     "test:nowatch": "jest",
     "coverage": "jest --coverage --watch",
     "lint": "eslint ./src --fix --ext js",
-    "precommit": "yarn lint && yarn test:nowatch",
-    "prepush": "yarn lint && yarn test:nowatch",
     "cypress": "cypress open"
   },
   "dependencies": {

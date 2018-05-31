@@ -4,6 +4,8 @@ const lightDate = str => {
   return `When: ${date.slice(0, idx + 6)}`
 }
 
+// eslint-disable no-undef
+
 describe('Routing', () => {
   it('Visits index', () => cy.visit('/'))
   it('Input has autofocus and can be typed in', () => {
